@@ -22,13 +22,13 @@ int verify_path(char **arguments)
     return (-1);
   free(global_path);
   while (exist_stat == -1 && dir_path != NULL)
-    {
-      command_path = append_command(dir_path, arguments[0]);
-      test_cph[i] = command_path;
-      exist_stat = exist(test_cph[i]);
-      dir_path = strtok(NULL, ":");
-      i++;
-    }
+  {
+  command_path = append_command(dir_path, arguments[0]);
+  test_cph[i] = command_path;
+  exist_stat = exist(test_cph[i]);
+  dir_path = strtok(NULL, ":");
+  i++;
+  }
   i--;
   free(global_dup);
   free_grid(test_cph, i);

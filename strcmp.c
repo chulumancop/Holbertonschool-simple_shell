@@ -12,11 +12,11 @@ int _strcmp(char *str1, char *str2)
   for (a = 0; str1[a] != '\0'; a++)
     ;
   for (a = 0; str2[a] != '\0'; a++)
-    {
-      if (str1[a] != str2[a])
-	{
-	  return (str1[a] - str2[a]);
-	}
-    }
+  {
+  if (str1[a] != str2[a])
+  {
+  return (str1[a] - str2[a]);
+  }
+  }
   return (0);
 }
